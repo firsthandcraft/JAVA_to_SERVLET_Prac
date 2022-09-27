@@ -1,0 +1,15 @@
+package second;
+
+public class Op2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 증가 감소 연산자 p78
+		int i =5, j;
+		//++ 1씩 증가
+		//--
+		j=i++;
+		System.out.println(j);
+	}
+
+}

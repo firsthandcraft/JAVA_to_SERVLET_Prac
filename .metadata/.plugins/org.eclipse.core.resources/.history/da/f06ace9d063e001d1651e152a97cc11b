@@ -1,0 +1,28 @@
+package step1;
+
+import java.util.Scanner;
+
+public class For2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//홀수만 나오게 만들기 
+//				Scanner sc = new Scanner(System.in);
+//				System.out.println("1~100까지의 홀수 ");
+//				int n =sc.nextInt();
+				int i;
+				//int fac= 1; //팩토리얼을 누적할 변수 선언시 초기값을 1로 줌
+	
+				
+				for(i=1; i<=100; i++) {
+					if(i %2 == 1) {
+					fac*=i;
+					System.out.println(n+"!---->>"+fac);		
+					}
+				}
+				
+				
+				//
+			}
+
+		}

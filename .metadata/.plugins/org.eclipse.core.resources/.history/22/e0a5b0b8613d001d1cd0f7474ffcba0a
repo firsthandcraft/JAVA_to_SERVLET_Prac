@@ -1,0 +1,28 @@
+package second;
+
+public class IfElse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//else if 문 p118 
+		int a=10,b=20;
+		boolean flag = false;
+		
+		if(a>10) {
+			System.out.println("a는 10보다 크다");
+		} else {
+			System.out.println("a는 10보다 크지않다");
+
+			}//a는 10보다 크지않다
+		
+		
+		if(a==10 && ㅠ>=20) {
+			System.out.println("a는 10보다 크다");
+		} else {
+			System.out.println("a는 10보다 크지않다");
+
+			}//a는 10보다 크지않다
+
+	}
+
+}

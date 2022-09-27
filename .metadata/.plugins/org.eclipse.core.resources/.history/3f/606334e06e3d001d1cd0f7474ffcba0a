@@ -1,0 +1,16 @@
+package second;
+
+import java.util.Scanner;
+
+public class SwitchTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int grade;
+		Scanner sc = new Scanner(System.in);		
+		System.out.println("학년을 입력하세요 : ");
+		int score=sc.nextInt();
+		
+	}
+
+}

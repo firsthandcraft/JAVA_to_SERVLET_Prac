@@ -1,0 +1,41 @@
+package step1;
+
+import java.util.Scanner;
+
+public class singIn {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//등록(아이디, 전화번호 이름 주소), 전체출력, 종료		
+		Scanner sc =new Scanner(System.in);
+		//main은 전역변수 (소멸되는 변수가 지역변수) 초기화 값이 필요하다ㅣ.
+		//변수: 아이디 전화번호 이름 주소
+		String id =null;
+		String name=null;
+		String add=null;
+		int i =sc.nextInt();
+		id  =sc.next();
+		name =sc.next();
+		add =sc.next();
+		int tel =sc.nextInt();
+		
+		System.out.println("123중에 하나를 입력");
+		switch (i) {
+			case 1:
+				System.out.println("등록");
+					
+
+			 break;
+			case 2:
+				System.out.println("전체출력");
+			 break;
+			case 3:
+			System.out.println("종료");
+			 break;
+			default:
+			System.out.println("1~3까지 숫자를 입력하세요");
+		}
+		
+	}
+
+}

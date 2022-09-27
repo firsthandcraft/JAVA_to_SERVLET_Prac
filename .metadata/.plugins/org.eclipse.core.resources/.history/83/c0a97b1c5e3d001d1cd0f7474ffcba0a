@@ -1,0 +1,15 @@
+package second;
+
+public class IfThen {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//조건문 p111
+		//if문
+		if() {
+					
+				}else {}
+
+	}
+
+}

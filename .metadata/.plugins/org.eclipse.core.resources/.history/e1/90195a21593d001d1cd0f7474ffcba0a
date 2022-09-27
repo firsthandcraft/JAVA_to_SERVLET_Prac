@@ -1,0 +1,18 @@
+package second;
+
+public class CastingTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//타입변환 
+		//자동타입변환 promotion
+		
+		//강제타입변환 casting - 거의 쓸일이 없다. 
+		int a =12,b=13;
+		float c=0;
+		c=(a+b)/;
+		
+	}
+
+}

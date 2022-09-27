@@ -1,0 +1,40 @@
+package second;
+
+import java.util.Scanner;
+
+public class SwitchCal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//p119
+		int a;
+		int b;
+		String c;
+		Scanner sc = new Scanner(System.in);		
+		System.out.println("숫자를 입력하세요 : ");
+		a=sc.nextInt();
+		System.out.println("숫자를 입력하세요 : ");
+		b=sc.nextInt();
+		System.out.println("부호를 입력하세요 : ");
+		c=sc.next();
+		
+		switch(c) {
+		case "+":
+		System.out.println(a+b);
+		break;
+		case "-":
+		System.out.println(a-b);
+		break;
+		case "*":
+		System.out.println(a*b);
+		break;
+		case "/":
+		System.out.println("4학년");
+		break;
+		default:
+			System.out.println("1-6숫자를 입력하세요");
+
+		}
+	}
+
+}

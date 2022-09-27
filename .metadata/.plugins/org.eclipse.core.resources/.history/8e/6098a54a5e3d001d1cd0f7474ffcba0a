@@ -1,0 +1,17 @@
+package second;
+
+public class IfThen {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//조건문 p111
+		//if문
+		int a= 10,b=20;
+		boolean flag = true
+		if(a >= b && ) {
+					
+				}else {}
+
+	}
+
+}

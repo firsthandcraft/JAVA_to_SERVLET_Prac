@@ -1,0 +1,22 @@
+package second;
+
+public class VarTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		boolean a =true;
+		byte b =10;
+		short c =20;
+		
+		int d = 30;
+		long e = 40;
+		
+		//소수점
+		float f =12.5f;
+		//int 정수형에 소수점을 붙이면 빨간줄 오류가 뜬다. 
+//		int d = 31.2;
+		
+		
+	}
+
+}
