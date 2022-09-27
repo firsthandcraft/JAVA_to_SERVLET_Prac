@@ -28,6 +28,9 @@ public class singIn {
 			
 			i =sc.nextInt();
 			
+			//if
+			
+			
 			switch (i) {
 				case 1:
 					System.out.println("아이디를 입력:");
@@ -42,8 +45,13 @@ public class singIn {
 					break;
 				 
 				case 2:
-					System.out.println("id는"+id+"name은"+name+"주소는"+add+"전화번호는"+tel);
-				 break;
+					// 아이디 이름 주소 전화번호에 null값인경우 "등록을 해주세요" 작성해보기
+					if(tel==null || id==null || name==null || add==null) {
+						System.out.println("등록을 작성해주세요");
+				
+					}else {System.out.println("id는"+id+"name은"+name+"주소는"+add+"전화번호는"+tel);
+					}
+				break;
 				 
 				case 3:
 					flag=false;
@@ -55,7 +63,7 @@ public class singIn {
 			}//switch
 			
 			
-			// 아이디 이름 주소 전화번호에 null값인경우 "등록을 해주세요" 작성해보기 
+			 
 			
 			
 		}//while 

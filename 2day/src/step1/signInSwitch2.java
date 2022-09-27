@@ -56,7 +56,7 @@ public class signInSwitch2 {
 							j=sc.nextInt();
 							System.out.println("숫자를 입력하세요 : ");
 							k=sc.nextInt();
-							System.out.println(j/k);
+							System.out.println((float)j/k);
 							break;
 						case "종료":
 							flag=false;
@@ -66,10 +66,6 @@ public class signInSwitch2 {
 						default:
 							System.out.println("오류 = 더하기/빼기/곱하기/나누기/종료 중에서  입력");
 					}//switch
-					
-					
-					// 아이디 이름 주소 전화번호에 null값인경우 "등록을 해주세요" 작성해보기 
-					
 					
 				}//while 
 	}
