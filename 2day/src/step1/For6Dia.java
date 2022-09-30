@@ -18,17 +18,20 @@ public class For6Dia {
         
         
         for(int i= 0; i<dia; i++) {
-            textLine +='*';
-            
+            textLine +='*';    
             System.out.println(textLine);
-            /*for (int j = dia; j > 0; j--) {
-                textLine-='*';
-                System.out.println(textLine);
-            } //for*/
+        }
+        for(int i= 0; i<dia-1; i++) { 
+        	System.out.println(textLine2);
+
+        	for (int j = 0; j < i; j++) {
+        		textLine2+='*';
+
+	        } //for 
+        	break;
         }
         
-        
-		
+	
 		
 		
 	}
