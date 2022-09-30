@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="step1.addr"/>
+    <fullyQualifiedTypeName name="step2.person"/>
+    <fullyQualifiedTypeName name="step3.product"/>
+    <fullyQualifiedTypeName name="step4.gradeInput"/>
+    <fullyQualifiedTypeName name="step5.Calc"/>
+    <fullyQualifiedTypeName name="step7.MonthService"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="step8.crudTest"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

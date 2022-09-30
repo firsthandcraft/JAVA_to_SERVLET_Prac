@@ -23,7 +23,6 @@ public class For6Dia {
         }
         for(int i= 0; i<dia-1; i++) { 
         	System.out.println(textLine2);
-
         	for (int j = 0; j < i; j++) {
         		textLine2+='*';
 
