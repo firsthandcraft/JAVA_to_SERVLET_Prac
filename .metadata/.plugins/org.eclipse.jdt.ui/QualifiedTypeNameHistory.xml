@@ -9,5 +9,16 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="step8.crudTest"/>
+    <fullyQualifiedTypeName name="step2.ArrParam"/>
+    <fullyQualifiedTypeName name="step4.Company"/>
+    <fullyQualifiedTypeName name="step5.Car"/>
+    <fullyQualifiedTypeName name="step5.Member"/>
+    <fullyQualifiedTypeName name="step6.Member2"/>
+    <fullyQualifiedTypeName name="step9.Person"/>
+    <fullyQualifiedTypeName name="bank.kb.KbBank"/>
+    <fullyQualifiedTypeName name="bank.hana.HanaBank"/>
+    <fullyQualifiedTypeName name="step11.Person"/>
+    <fullyQualifiedTypeName name="step12.Member"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="stpe13.Calc"/>
 </qualifiedTypeNameHistroy>

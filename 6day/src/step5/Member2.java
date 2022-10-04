@@ -7,9 +7,9 @@ public class Member2 {
 	//생성자 선언
 	public Member2(String name, String tel, String address) {
 		super();
-		name = "noname";
-		tel = "notel";
-		address = "noadd";
+		this.name = "noname";
+		this.tel = "notel";
+		this.address = "noadd";
 	}
 	//메소드 추가 
 	void print() {
