@@ -6,7 +6,6 @@
     <fullyQualifiedTypeName name="step4.gradeInput"/>
     <fullyQualifiedTypeName name="step5.Calc"/>
     <fullyQualifiedTypeName name="step7.MonthService"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="step8.crudTest"/>
     <fullyQualifiedTypeName name="step2.ArrParam"/>
@@ -19,6 +18,21 @@
     <fullyQualifiedTypeName name="bank.hana.HanaBank"/>
     <fullyQualifiedTypeName name="step11.Person"/>
     <fullyQualifiedTypeName name="step12.Member"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="stpe13.Calc"/>
+    <fullyQualifiedTypeName name="step14.MemberVO"/>
+    <fullyQualifiedTypeName name="step3.Car"/>
+    <fullyQualifiedTypeName name="java.util.PrimitiveIterator"/>
+    <fullyQualifiedTypeName name="javax.print.attribute.standard.PrinterInfo"/>
+    <fullyQualifiedTypeName name="step4.Person"/>
+    <fullyQualifiedTypeName name="step5.Engineer"/>
+    <fullyQualifiedTypeName name="step5.Notebook"/>
+    <fullyQualifiedTypeName name="step6.FriendService"/>
+    <fullyQualifiedTypeName name="service.SchoolService"/>
+    <fullyQualifiedTypeName name="vo.MemberVO"/>
+    <fullyQualifiedTypeName name="service.AddresService"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="service.AddsService"/>
+    <fullyQualifiedTypeName name="vo.addres"/>
+    <fullyQualifiedTypeName name="javax.print.ServiceUI"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

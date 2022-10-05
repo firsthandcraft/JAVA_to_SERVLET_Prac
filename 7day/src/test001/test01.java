@@ -4,25 +4,26 @@ import java.util.Scanner;
 
 public class test01 {
  public static void main(String[] args) {
-		int arr[] = new int[5];
-		Scanner sc = new Scanner(System.in);
-		for(int i=0;i<arr.length;i++) {
-			
-			System.out.println(i + "점수입력");
-			arr[i] = sc.nextInt();
-			
+	int arr[] = {13,22,-3,92,55,5};
+		
+		Scanner sc =  new Scanner(System.in);
+		System.out.println("2개의 정수를 입력하세요 (0~5)");
+		
+		int i = sc.nextInt();
+		int j = sc.nextInt();
+		
+		int temp=0;
+		temp = arr[i];
+		arr[i] = arr[j];
+		arr[j] = temp;
+		
+		for(int k=0; k<arr.length;k++) {
+			System.out.print(arr[k] + "		");
 		}
 		
-		int sum = 0;
-for(int i=0;i<arr.length;i++) {
-			
-			sum = sum +arr[i];
+		
+		sc.close();
 			
 		}
-		
-		
-	System.out.println("총점 : "+ sum);
-	
-	sc.close();
- }
+
 }
