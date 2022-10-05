@@ -7,6 +7,6 @@ public class TestMemberVO {
 	 Member vo =new Member("java", "abcd");
 	 vo.setJob("프로그래머");
 	 System.err.println(vo.getId()+""+vo.getPassword()+""+vo.getJob());
-	 //javaabcd프로그래머
+	 //javaabcd 프로그래머
  	}
 }
