@@ -4,22 +4,25 @@ import java.util.Scanner;
 
 public class test01 {
  public static void main(String[] args) {
-	int arr[] = {13,22,-3,92,55,5};
+		int arr[] = new int[10];
+		Scanner sc = new Scanner(System.in);
 		
-		Scanner sc =  new Scanner(System.in);
-		System.out.println("2개의 정수를 입력하세요 (0~5)");
-		
-		int i = sc.nextInt();
-		int j = sc.nextInt();
-		
-		int temp=0;
-		temp = arr[i];
-		arr[i] = arr[j];
-		arr[j] = temp;
-		
-		for(int k=0; k<arr.length;k++) {
-			System.out.print(arr[k] + "		");
+		for(int i=0; i<arr.length;i++) {
+		System.out.println(i + "인덱스 값을 입력");
+		arr[i] = sc.nextInt();
 		}
+		
+		System.out.println("배열");
+		for(int i=0; i<arr.length;i++) {
+			System.out.print(arr[i] + "	");
+			}
+		System.out.println();
+		System.out.println("3의 배수는");
+		for(int i=0; i<arr.length;i++) {
+			if(arr[i]%3==0) {
+			System.out.print(arr[i] + "	");
+			}
+			}
 		
 		
 		sc.close();
