@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="step1.addr"/>
-    <fullyQualifiedTypeName name="step2.person"/>
-    <fullyQualifiedTypeName name="step3.product"/>
-    <fullyQualifiedTypeName name="step4.gradeInput"/>
-    <fullyQualifiedTypeName name="step5.Calc"/>
-    <fullyQualifiedTypeName name="step7.MonthService"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="step8.crudTest"/>
     <fullyQualifiedTypeName name="step2.ArrParam"/>
     <fullyQualifiedTypeName name="step4.Company"/>
     <fullyQualifiedTypeName name="step5.Car"/>
     <fullyQualifiedTypeName name="step5.Member"/>
     <fullyQualifiedTypeName name="step6.Member2"/>
-    <fullyQualifiedTypeName name="step9.Person"/>
     <fullyQualifiedTypeName name="bank.kb.KbBank"/>
     <fullyQualifiedTypeName name="bank.hana.HanaBank"/>
     <fullyQualifiedTypeName name="step11.Person"/>
@@ -29,7 +21,6 @@
     <fullyQualifiedTypeName name="step6.FriendService"/>
     <fullyQualifiedTypeName name="vo.MemberVO"/>
     <fullyQualifiedTypeName name="service.AddresService"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="service.AddsService"/>
     <fullyQualifiedTypeName name="vo.addres"/>
     <fullyQualifiedTypeName name="javax.print.ServiceUI"/>
@@ -42,14 +33,31 @@
     <fullyQualifiedTypeName name="step8.Dog"/>
     <fullyQualifiedTypeName name="step8.Employee"/>
     <fullyQualifiedTypeName name="step8.Manager"/>
-    <fullyQualifiedTypeName name="step9.Student"/>
     <fullyQualifiedTypeName name="step9.Teacher"/>
     <fullyQualifiedTypeName name="step10.Company"/>
     <fullyQualifiedTypeName name="step10.MemberVo"/>
     <fullyQualifiedTypeName name="java.awt.PageAttributes"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="service.SchoolService"/>
     <fullyQualifiedTypeName name="vo.Person"/>
     <fullyQualifiedTypeName name="step11.Phone"/>
     <fullyQualifiedTypeName name="step11.SmartPhone"/>
+    <fullyQualifiedTypeName name="step12.Calculator"/>
+    <fullyQualifiedTypeName name="step1.Animal"/>
+    <fullyQualifiedTypeName name="step4.ZooService"/>
+    <fullyQualifiedTypeName name="step5.Vehicle"/>
+    <fullyQualifiedTypeName name="step5.Airplane"/>
+    <fullyQualifiedTypeName name="step4.Animal"/>
+    <fullyQualifiedTypeName name="step7.Manager"/>
+    <fullyQualifiedTypeName name="step7.HrService"/>
+    <fullyQualifiedTypeName name="step7.Employee"/>
+    <fullyQualifiedTypeName name="step7.Engineer"/>
+    <fullyQualifiedTypeName name="step8.SchoolService"/>
+    <fullyQualifiedTypeName name="step8.MemberVO"/>
+    <fullyQualifiedTypeName name="step9.Person"/>
+    <fullyQualifiedTypeName name="step9.Student"/>
+    <fullyQualifiedTypeName name="test001.Airplane"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="test001.SupersonicAirplane"/>
+    <fullyQualifiedTypeName name="step10.protectedTest01"/>
 </qualifiedTypeNameHistroy>
