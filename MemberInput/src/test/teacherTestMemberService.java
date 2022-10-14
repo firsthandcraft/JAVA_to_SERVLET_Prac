@@ -23,7 +23,9 @@ public class teacherTestMemberService {
 			switch(i) {
 			case 1:
 				//등록
-	            service.addMemberVO(new TwoMembervo());
+				TwoMembervo m2=  new TwoMembervo(id,name, tel, add);
+
+	            service.addMemberVO(m2);
 				break;
 			case 2:
 				//검색

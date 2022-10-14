@@ -7,7 +7,7 @@ public class Employee extends Person{
 		// TODO Auto-generated constructor stub
 		this.dept=dept;
 	}
-	public String getDept() {
+	public String getDaept() {
 		return dept;
 	}
 

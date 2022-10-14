@@ -12,7 +12,8 @@ public class teacherMS {
 	
 	//메소드 
 	//등록
-	public TwoMembervo addMemberVO(TwoMembervo Twomembervo) {
+	public void addMemberVO(TwoMembervo Twomembervo) {
+		teacherMS service = new teacherMS();
 		Scanner sc= new Scanner(System.in);
 		String name,id,tel,add;
 		System.out.println("아이디 입력: ");
@@ -23,7 +24,6 @@ public class teacherMS {
 		tel=sc.next();
 		System.out.println("주소 입력: ");
 		add=sc.next();
-		return new TwoMembervo(id,name, tel, add);
 		
 	}
 	//수정

@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="vo.addres"/>
-    <fullyQualifiedTypeName name="javax.print.ServiceUI"/>
-    <fullyQualifiedTypeName name="step5.Person"/>
-    <fullyQualifiedTypeName name="step5.Professor"/>
-    <fullyQualifiedTypeName name="step6.Employee"/>
-    <fullyQualifiedTypeName name="step6.Manager"/>
-    <fullyQualifiedTypeName name="step7.Person"/>
-    <fullyQualifiedTypeName name="step8.Person"/>
-    <fullyQualifiedTypeName name="step8.Dog"/>
-    <fullyQualifiedTypeName name="step8.Employee"/>
     <fullyQualifiedTypeName name="step8.Manager"/>
     <fullyQualifiedTypeName name="step9.Teacher"/>
     <fullyQualifiedTypeName name="step10.Company"/>
@@ -35,8 +25,6 @@
     <fullyQualifiedTypeName name="test001.Airplane"/>
     <fullyQualifiedTypeName name="test001.SupersonicAirplane"/>
     <fullyQualifiedTypeName name="step10.protectedTest01"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="step4.Picachu"/>
     <fullyQualifiedTypeName name="step4.Gobook"/>
@@ -60,4 +48,16 @@
     <fullyQualifiedTypeName name="step12.RemoteControl"/>
     <fullyQualifiedTypeName name="step11.RemoteControl"/>
     <fullyQualifiedTypeName name="step11.Audio"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ArrayBlockingQueue"/>
+    <fullyQualifiedTypeName name="step4.ProductVO"/>
+    <fullyQualifiedTypeName name="step5.MemberMenu"/>
+    <fullyQualifiedTypeName name="step5.Member"/>
+    <fullyQualifiedTypeName name="service.MemberService"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="vo.MemberVO"/>
+    <fullyQualifiedTypeName name="vo.TwoMembervo"/>
+    <fullyQualifiedTypeName name="test.teacherTestMemberService"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
