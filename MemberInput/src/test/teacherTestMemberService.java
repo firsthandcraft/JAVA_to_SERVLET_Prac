@@ -2,56 +2,51 @@ package test;
 
 
 
-import java.util.Scanner;
-
-import service.teacherMS;
-import vo.TwoMembervo;
+import java.util.List;
+import java.util.Vector;
 
 public class teacherTestMemberService {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
-		String name,id,tel,add;
-
-		boolean flag = true;
-		int i=0;
-		teacherMS service = new teacherMS();
-		while(flag) {
-			System.out.println("1.등록 2.검색 3.수정 4.삭제 5.전체출력 6.종료");
-			i=sc.nextInt();
-			switch(i) {
-			case 1:
-				//등록
-				TwoMembervo m2=  new TwoMembervo(id,name, tel, add);
-
-	            service.addMemberVO(m2);
-				break;
-			case 2:
-				//검색
-				System.out.println("아이디 입력 :");
-				id=sc.next();
-				
-				service.findMemberVO(id);
-				break;
-			case 3:
-				//수정
-				
-				break;
-			case 4:
-				//삭제
-				break;
-			case 5:
-				//전출
-				service.printAll();
-				break;
-			case 6:
-				System.out.println("종료");
-				 flag=false;
-				break;
-			default:
-				System.out.println("다시 1-6만입력");
+	List<Board> list = new Vector<>(); //Vector 컬렉션 저장
+	
+	//작업 스레드 객체 생성
+	Thread threadA =new Thread() {
+		@Override
+		public void run() {
+			//객체 1000개 추가
+			for(int i=1; i<=1000; i++) {
+				list.add(new Board("제목"+i,"내용"+i,"글쓴이"+i));
+			}
 		}
-			
+	};
+	
+	//작업스레드 객체 생성
+	Thread threadB = new Thread() {
+		@Override
+		public void run() {
+			//객체 1000개 추가
+			for(int i=1001; i<=2000; i++) {
+				list.add(new Board("제목"+i,"내용"+i,"글쓴이"+i));
+			}
 		}
+	};
+	
+	//작업스레드 실행
+	threadA.start();
+	threadB.start();
+	
+	//작업 스레드들이 모두 종료될때 까지 메인 스레드를 기다리게 함
+	try {
+		threadA.join();
+		threadB.join();
+	} catch (Exception e){
+		
+	}
+	
+	//저장된 총 객체 수 얻기 
+	int size = list.size();
+	System.out.println("총객체 수 : "+size);
+	System.out.println();
 	}}

@@ -37,6 +37,7 @@ public class ArrayListExample {
 			제목3	내용3	글쓴이3
 			제목4	내용4	글쓴이4
 			제목5	내용5	글쓴이5*/
+			
 		}
 	
 	
