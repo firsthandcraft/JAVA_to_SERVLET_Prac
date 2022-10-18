@@ -8,7 +8,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 
-public class TestServer {
+public class TestServer { 
 
 	public void go() throws IOException {//예외적용 throws IOException
 		ServerSocket serverSocket = new ServerSocket(5432);
@@ -24,7 +24,7 @@ public class TestServer {
 				InputStream is =socket.getInputStream();
 				//처리속도를 빨리 할수 잇게InputStreamReader
 				InputStreamReader ir =new InputStreamReader(is);
-				//
+				//보조스트림 키보드읿력을 받아온다.
 				BufferedReader br =new BufferedReader(ir);
 				
 				try {
