@@ -10,7 +10,7 @@ class Worker extends Thread{
 		try {
 			Thread.sleep(1000);//1√ 
 		} catch(InterruptedException e) {
-			e.printStackTrace();
+			e.printStackTrace(); 
 			}
 		}
 	}

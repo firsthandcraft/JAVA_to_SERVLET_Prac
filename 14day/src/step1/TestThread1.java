@@ -1,9 +1,9 @@
 package step1;
 
-class Worker extends Thread{
+class Worker extends Thread{ 
 	public void run() {
 		for(int i = 0; i<10;i++) {
-			System.out.println("work run()...."+i);
+		 	System.out.println("work run()...."+i);
 		}
 	}
 }

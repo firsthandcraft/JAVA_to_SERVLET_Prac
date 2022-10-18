@@ -14,7 +14,7 @@ class Worker extends Thread{
 public class TestThread3 {
 public static void main(String[] args) {
 
-	Worker w = new Worker("소지섭");//3번째5번째
+	Worker w = new Worker("소지섭");//3번째5번째 
 	w.start();
 	
 	Worker w2 = new Worker("시용태");//2번째4번째...
