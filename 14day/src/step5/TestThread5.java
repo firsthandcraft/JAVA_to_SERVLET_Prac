@@ -13,7 +13,7 @@ class Worker implements Runnable{
 					
 			System.out.println(Thread.currentThread().getName()+"worker run..."+i);
 		}
-	}
+	} 
 }
 
 public class TestThread5 {
@@ -25,7 +25,7 @@ public class TestThread5 {
 		Thread t1 = new Thread(worker1,"소지섭");
 		//우선권
 		//1-10까지 숫자 가 높을 수록 우선권
-		System.out.println("우선순위"+t1.getPriority());//기본세팅이 5로 세팅된다.
+		System.out.println("우선순위"+t1.getPriority());//기본세팅이 5로 세팅된다.우선순위5
 		
 		Thread t2 = new Thread(worker1,"-------");
 		t2.setPriority(Thread.MAX_PRIORITY);//10

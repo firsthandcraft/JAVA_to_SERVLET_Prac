@@ -12,7 +12,7 @@ class Worker extends Thread{
 }
 
 public class TestThread3 {
-public static void main(String[] args) {
+public static void main(String[] args) { 
 
 	Worker w = new Worker("소지섭");//3번째5번째 
 	w.start();

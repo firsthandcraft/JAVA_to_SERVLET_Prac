@@ -11,7 +11,7 @@ class Worker extends Thread{
 			Thread.sleep(1000);//1√ 
 		} catch(InterruptedException e) {
 			e.printStackTrace(); 
-			}
+			} 
 		}
 	}
 }
