@@ -1,0 +1,281 @@
+[문제30]  아래 화면의 결과 처럼 사원의  last_name,  salary, salary 값을 
+            1000당 별표를 하나를 출력하는  query문을 작성하세요. (lpad)
+
+
+LAST_NAME      	SALARY      STAR
+-------------------- ----------    --------------------------------------------------
+King                   	  26400     **************************
+Kochhar              	  18700     ******************
+De Haan              	  17000     *****************
+..... 
+     select last_name,  salary ,lpad(' ',salary/1000+1,'*')"STAR"  
+     from employees; 
+
+       select last_name,  salary ,lpad('*',salary/1000,'*')"STAR"  
+     from employees; 
+
+    [문제31] 부서별 월급의 합, 부서인원을 구해보자.
+                -- 출력결과> 부서ID, 월급의 합  
+
+            SELECT department_id
+           , SUM(salary)
+           , COUNT(*)
+           FROM employees
+           GROUP BY department_id;
+
+ [문제32] 직무별 급여의 합, 평균, 최대급여, 최소급여를여나타내 보자.
+      -- 출력결과> 직무ID, 급여의 합
+   
+          SELECT job_id
+          , SUM(salary)
+          , AVG(salary)
+          , MAX(salary)
+          , MIN(salary)
+          FROM employees
+         GROUP BY job_id;
+
+  [문제33]부서번호가 10, 20인 부서별 최대 급여를 구하라
+        -- 출력결과> 부서번호, 최대월급  
+
+         SELECT department_id
+           , MAX(salary)
+         FROM employees
+        GROUP BY department_id
+        HAVING department_id IN(10, 20);
+
+          SELECT department_id
+           , MAX(salary)
+         FROM employees
+         where department_id IN(10, 20);
+         GROUP BY department_id
+
+[문제34]   -- 재고 관련 업무를 담당하고 있는 사원의 월별 입사인원을 구하라.
+-- 단 입사인원이 2명 이하인 달은 제외한다.   ST
+-- 출력결과> 월, 입사자수
+
+  SELECT TO_CHAR(hire_date, 'MM')
+           , COUNT(*)
+FROM employees
+WHERE job_id LIKE 'ST%' -- 25명
+GROUP BY TO_CHAR(hire_date, 'MM')
+HAVING COUNT(*) > 2
+ORDER BY TO_CHAR(hire_date, 'MM');
+
+ [문제35] 
+   부서별 평균 월급을 구하라.
+-- 단. 부서원이 10명 이상인 부서에 한한다.
+-- 출력결과> 부서ID, 평균 월급, 부서원 수
+  SELECT department_id
+           , AVG(salary)
+           , COUNT(*)
+FROM employees
+GROUP BY department_id
+HAVING COUNT(*) >= 10;
+
+[문제36] 년도별로 입사한 인원수 출력해주세요.
+
+       select to_char(hire_date,'yyyy') hire_year, count(*)
+       from employees
+       group by to_char(hire_date,'yyyy');
+
+ [문제37] 입사한 달별 인원수 출력해주세요
+  to_char, extract, count
+
+      select to_char(hire_date,'mm') hire_month, count(*)
+       from employees
+       group by to_char(hire_date,'mm');
+
+
+EXTRACT함수는 특정 날짜, 시간 값이나 날짜 값 등의 표현식으로부터
+ 지정된 날짜 영역의 값을 추출하여 반환한다.
+
+       select extract(month from hire_date), count(*)
+       from employees
+       group by extract(month from hire_date);
+
+ 
+[문제38] 2008년도에 입사한 사원들의 job_id별 인원수를 구하고 인원수가 많은 순으로
+            출력하세요. ( to_char(),    to_date() )
+         JOB_ID          COUNT(*)
+         -------------   ----------
+         SA_REP          6
+         SH_CLERK       2
+         ST_CLERK       2
+         SA_MAN        1
+
+ select job_id, count(*)
+ from employees
+  where to_char(hire_date, 'yyyy') = 2008
+  group by job_id
+   order by count(*) desc; 
+
+  
+ select job_id, count(*)
+from employees
+where hire_date >= to_date('2008-01-01', 'yyyy-mm-dd')
+and hire_date < to_date('2009-01-01', 'yyyy-mm-dd')
+group by job_id
+order by count(*) desc;
+
+
+조인 
+select * from tab; 
+
+
+[문제39] 부서 80에 속하는 last_name, job_id, department_name, city를 표시하기 위한
+           query 를 작성합니다.
+        
+           employees :   last_name, job_id
+           departments :  department_name
+           locations :      city
+          
+           select * from employees; 
+           select * from departments; 
+           select * from locations; 
+         
+SELECT e.last_name, e.job_id, d.department_name, l.city
+FROM employees e, departments d, locations l
+WHERE e.department_id = 80
+AND d.location_id = l.location_id
+AND d.department_id = 80;
+
+
+SELECT e.last_name, e.job_id, d.department_name, l.city
+FROM employees e JOIN departments d
+ON e.department_id = d.department_id
+JOIN locations l 
+ON d.location_id = l.location_id
+WHERE e.department_id = 80;
+
+  using() : 공통된 칼럼명을 작성할때  
+           
+SELECT last_name, job_id, department_name, city
+FROM employees JOIN departments
+USING(department_id)
+JOIN locations 
+USING(location_id)
+WHERE department_id = 80;
+
+
+ [문제40]locations 테이블에 있는 city컬럼에  Toronto도시에서 근무하는 모든 사원의
+            last_name, job_id, department_id, department_name 을 표시하기 위한 
+            query 를 작성합니다.
+ 
+      
+
+SELECT e.last_name, e.job_id, d.department_id, d.department_name
+FROM employees e, departments d, locations l
+WHERE e.department_id = d.department_id
+AND d.location_id = l.location_id
+AND l.city = 'Toronto';
+
+
+SELECT e.last_name, e.job_id, d.department_id, d.department_name
+FROM employees e JOIN departments d
+ON e.department_id = d.department_id
+JOIN locations l
+ON d.location_id = l.location_id
+ WHERE l.city = 'Toronto';
+
+ Select last_name, job_id, department_id, department_name,city
+From employees Join departments
+USING (department_id)
+JOIN locations
+USING (location_id)
+WHERE city = 'Toronto';
+
+
+[문제41] 2006년도에 입사한 사원들의 부서이름별로 급여의 총액, 평균을 출력하세요.
+
+   그룹(sum, avg) departments 
+ 
+   SELECT d.department_name, sum(e.salary) as "Total", avg(e.salary) as "Avg"
+   FROM employees e, departments d
+   WHERE e.department_id = d.department_id
+   AND e.hire_date >= to_date('2006/01/01','yyyy/mm/dd') 
+    AND e.hire_date >= to_date('2007/01/01','yyyy/mm/dd') 
+    GROUP BY d.department_name;
+
+    join on 
+
+  SELECT d.department_name, sum(e.salary) as "Total", avg(e.salary) as "Avg"
+FROM employees e JOIN departments d
+ON e.department_id = d.department_id
+WHERE  e.hire_date >= to_date('2006/01/01','yyyy/mm/dd') 
+AND e.hire_date < to_date('2007/01/01','yyyy/mm/dd')
+GROUP BY d.department_name;
+
+
+ [문제42] 2006년도에 입사한 사원들의 도시이름별로 급여의 총액, 평균을 출력하세요.
+
+ SELECT l.city, sum(e.salary) as "Total" ,avg(e.salary) as "Avg"
+FROM employees e, departments d, locations l
+WHERE e.department_id = d.department_id
+AND d.location_id = l.location_id
+AND e.hire_date >= to_date('2006/01/01','yyyy/mm/dd') 
+AND e.hire_date < to_date('2007/01/01','yyyy/mm/dd')
+GROUP BY l.city;
+
+ SELECT l.city, sum(e.salary) as "Total",avg(e.salary) as "Avg"
+FROM employees e JOIN departments d
+ON e.department_id = d.department_id
+JOIN locations l
+ON d.location_id = l.location_id
+WHERE  e.hire_date >= to_date('2006/01/01','yyyy/mm/dd') 
+AND e.hire_date < to_date('2007/01/01','yyyy/mm/dd')
+GROUP BY l.city;
+
+ 
+     
+ [문제44]2007년도에 입사한 사원들의 도시이름별로 급여의 총액, 평균을 출력하세요. 
+            단 부서 배치를 받지 않는 사람들의 급여의 총액, 평균도 구하세요.
+
+      SELECT l.city, sum(e.salary) as "Total" ,avg(e.salary) as "Avg"
+FROM employees e, departments d, locations l
+WHERE e.department_id = d.department_id(+)
+AND d.location_id = l.location_id(+)
+AND e.hire_date >= to_date('2007/01/01','yyyy/mm/dd') 
+AND e.hire_date < to_date('2008/01/01','yyyy/mm/dd')
+GROUP BY l.city; 
+
+ SELECT l.city, sum(e.salary) as "Total",avg(e.salary) as "Avg"
+FROM employees e LEFT OUTER JOIN departments d
+ON e.department_id = d.department_id
+LEFT OUTER JOIN locations l
+ON d.location_id = l.location_id
+WHERE e.hire_date >= to_date('2007/01/01','yyyy/mm/dd') 
+AND e.hire_date < to_date('2008/01/01','yyyy/mm/dd')
+GROUP BY l.city;
+ 
+    
+ [문제45] 모든 부서의 위치 정보를 얻어보자.
+-- 출력결과> 부서번호(departments), 부서이름(departments), 도시이름(locations)
+
+    SELECT department_id
+          , department_name
+          , city
+FROM departments d, locations l
+WHERE d.location_id = l.location_id;
+
+  
+ SELECT department_id
+          , department_name
+          , city
+FROM departments d  JOIN  locations l
+ON d.location_id = l.location_id;
+
+[문제46]
+-- 2005년 1/2분기에 입사한 사원 정보를 가져오자.
+-- 출력결과> 사원번호, 이름(employees table), 부서이름(departments table), 
+    직무이름(jobs table)
+ 
+ SELECT employee_id, last_name ,hire_date, department_name, job_title
+FROM employees e, departments d, jobs j
+WHERE e.department_id = d.department_id
+AND e.job_id = j.job_id
+AND TO_CHAR(hire_date, 'YYYY-DD') BETWEEN '2005-01' AND '2005-06';  
+
+JOIN ON 수정 
+ 
+
+
