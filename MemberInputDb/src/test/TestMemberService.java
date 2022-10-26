@@ -1,5 +1,14 @@
 package test;
+/*drop table member;
+--member의 테이블
+create table member(
+id varchar2(50)primary key,
+name varchar2(50) not null,
+tel varchar2(50) not null,
+addr varchar2(50) not null
+);
 
+select*from member;*/
 import java.util.Scanner;
 
 import service.MemberService;

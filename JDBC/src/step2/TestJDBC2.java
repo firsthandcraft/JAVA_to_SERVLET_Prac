@@ -25,7 +25,7 @@ public class TestJDBC2 {
 			int result= stmt.executeUpdate(sql);//insert =executeUpdate를 써줘야한다.
 			System.out.println(result);//영향을 준 row수(만약 한명 들어가면 1이 반환0)
 			
-			//6.close	
+			//6.close	 
 			stmt.close();
 			con.close();
 					

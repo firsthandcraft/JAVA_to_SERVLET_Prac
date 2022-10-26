@@ -47,10 +47,11 @@ public class MemberDAO implements Dao {
 			pstmt.setString(3,m.getTel());
 			pstmt.setString(4,m.getAdd());
 			pstmt.executeUpdate();
-			discon();
+			
 		} catch(Exception e) {
 			System.out.println(e);
 		}
+		discon();
 	}
 	@Override
 	public MemberVO selectMember(String id) {

@@ -4,7 +4,15 @@ import java.util.Scanner;
 
 import service.BookService;
 import vo.BookVO;
-
+/*create sequence Book_seq;
+create table book(
+id varchar2(50)primary key,
+author varchar2(50) not null,
+title varchar2(50) not null,
+publisher varchar2(50) not null,
+price number not null
+);
+select * from book;*/
 
 public class TestBookService {
 public static void main(String[] args) {
