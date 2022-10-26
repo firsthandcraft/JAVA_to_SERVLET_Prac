@@ -1,4 +1,6 @@
-GitRepositoriesView.GitDirectories=C\:\\workspace\\.git;C\:\\Users\\USER\\git\\frontend_project\\.git;C\:\\Users\\USER\\git\\repository\\.git;
-GitRepositoriesView.GitDirectories.relative=.git;C\:\\Users\\USER\\git\\frontend_project\\.git;C\:\\Users\\USER\\git\\repository\\.git;
+GitRepositoriesView.GitDirectories=C\:\\workspace\\.git;C\:\\workspace\\frontend_project\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;frontend_project\\.git;
 RepositorySearchDialogSearchPath=C\:\\Users\\USER\\git
+core_defaultRepositoryDir=C\:\\workspace
+core_ssh_default_agent=\\\\.\\pageant
 eclipse.preferences.version=1
