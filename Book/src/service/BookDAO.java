@@ -52,10 +52,11 @@ public class BookDAO implements Dao {
 			pstmt.setString(4,b.getPublisher());
 			pstmt.setInt(5,b.getPrice());
 			pstmt.executeUpdate();
-			discon();
 		} catch(Exception e) {
 			System.out.println(e);
 		}
+		discon();
+
 	}
 
 	@Override

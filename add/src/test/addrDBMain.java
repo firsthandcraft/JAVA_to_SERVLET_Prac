@@ -8,15 +8,7 @@ import vo.Member;
 
 public class addrDBMain {
 public static void main(String[] args) {
-	//이름 전화번호 주소 dept
-	//그룹 학생 교슈 교직원
-	//1. 회원관리 
-	//1. 회원가입 2. 내 정보 수정 3. 로그인  4. 로그아웃 5. 탈퇴 6.종료
-	//2. 게시판 
-	//1.글쓰기 2.글 번호로 검색 3. 글수정 4. 글삭제 5. 전체 글보기 6. 종료
-	//3. 창고 
-	//1.제품 등록 2. 제품번호로 검색 3. 제품명으로 검색 4,. 제품 수정 5. 제품 목록 6. 제품 삭제 7. 종료 
-	//4.종료
+	
 	ServiceImpl service = new ServiceImpl();
 	boolean flag= true, flag2=false;
 	int menu,i;
@@ -29,7 +21,7 @@ public static void main(String[] args) {
 		System.out.println("1.추가  2.전체검색  3.검색  4.종료  5.수정  6.삭제");
 		menu= sc.nextInt();
 		
-		switch(menu) {
+		switch(menu) { 
 		case 1:
 			System.out.println("이름 :");
 			name=sc.next();
