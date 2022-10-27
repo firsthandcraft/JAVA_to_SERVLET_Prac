@@ -94,7 +94,7 @@ public class BookDAO implements Dao {
 			pstmt.setInt(4,b.getPrice());
 			pstmt.setString(5,b.getId());
 			pstmt.executeUpdate();
-			discon();
+			
 		} catch(Exception e) {
 			System.out.println(e);
 		}
@@ -110,7 +110,7 @@ public class BookDAO implements Dao {
 			pstmt=conn.prepareStatement(sql);
 			pstmt.setString(1,id);
 			pstmt.executeUpdate();
-			discon();
+			
 
 		} catch(Exception e) {
 			System.out.println(e);
